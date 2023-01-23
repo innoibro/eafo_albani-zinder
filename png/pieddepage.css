@@ -1,0 +1,10 @@
+body{
+    width: 80%;
+    margin: 0% auto;
+    
+}
+#footer{
+    height: auto;
+    background-color: lightgray;
+    font-family: Tahoma, Verdana, sans-serif
+}

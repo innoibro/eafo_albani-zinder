@@ -1,0 +1,24 @@
+body{
+    background-color: #999999;
+}
+#container{
+ width: 80%;
+ margin: 0% auto;
+ background-color: #fff;
+}
+#content{
+margin-left: 120px;
+margin-top: 20px;
+}
+p{
+    font-size: 20px;
+}
+.copyright{
+    width: auto;
+    height: 50px;
+    background-color: rgb(211, 62, 62);
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
