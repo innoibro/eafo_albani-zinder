@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mon formulaire Enregistrement des Achats</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="formulairestyle.css" type="text/css">
+    </head>
+    <body>
+        <form action="ApprentissagePHP.php" method="post" enctype="multipart/form-data">
+            <p>
+                <fieldset id="inputbasic">
+                    <legend>Informations principales</legend>
+                     <label for="nomclient">Entrer votre nom</label>
+                    <input type="text" name="nomclient" id="nomclient" placeholder=" Votre nom" required="required" class="personne">
+                    <br/><br/>
+                    <label for="prenomclient">Entrer prenom</label>
+                    <input type="text" name="prenom" id="prenomclient" placeholder="Votre Prénom" required="required" class="personne">
+                    <br/><br/>
+                    <label for="telephone">Entrer numero de telephone</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="numero de téléphone" required="required" class="telephone">
+                    <br/><br/>
+                    <label for="adressemail">Entrer votre adresse email</label>
+                    <input type="email" name="adressemail" id="adressemail" placeholder="Votre Email" required="required" class="mail">
+                    <br/><br/>
+                    <label for="adressemail">Confirmer l'adresse mail</label>
+                    <input type="email" name="remail" id="remail" placeholder="mail.com" required="required" class="mail">
+                    <br/><br/>
+                </fieldset>
+                <br/>
+                 <!--la localité du client doit etre renseignée-->
+                <fieldset id="second">
+                 <legend>informations secondaires</legend><br/><br/>
+                <label for="depville"> Indiquer votre ville!</label>
+                <select name="depville" id="depville" class="select">
+                    <optgroup label="Niger">
+                        <option value="niamey">Niamey</option>
+                        <option value="dosso">Dosso</option>
+                        <option value="maradi">Maradi</option>
+                        <option value="tahoua">Tahoua</option>
+                        <option value="zinder">Zinder</option>
+                        <option value="diffa">Diffa</option>
+                        <option value="agadez">Agadez</option>
+                        <option value="tillaberi">Tillaberi</option>
+                    </optgroup>
+                    <optgroup label="Mali">
+                        <option value="bamako">Bamako</option>
+                        <option value="segou">Segou</option>
+                        <option value="sigasso">Sigasso</option>
+                        <option value="shan">Shan</option>
+                        <option value="mopti">Mopti</option>
+                        <option value="gao">Gao</option>
+                        <option value="tombouctou">Tombouctou</option>
+                        <option value="koutchiala">Koutchiala</option>
+                        <option value="kidal">Kidal</option>
+                    </optgroup>
+                    <optgroup label="Burkina">
+                        <option value="ouagadougou">Ouagadougou</option>
+                        <option value="kantchari">Kantchari</option>
+                        <option value="kolwaygo">Kolwaygo</option>
+                    </optgroup>
+                    <optgroup label="Togo">
+                        <option value="Novici">Novici</option>
+                        <option value="egbe">Egbe</option>
+                        <option value="godaflao">Godaflao</option>
+                        <option value="assigameh">Assigameh</option>
+                        <option value="togo2000">togo 2000</option>
+                    </optgroup>
+                </select>
+                <br/><br/>
+                <input type="radio" name="souhaiter" value="achat">
+                <label for="achat">Achat</label><br><br>
+                <textarea name="description produit" id="description" maxlength="50px" weight="200px" class="description">
+                    faites un commentaire
+                </textarea><br/>
+                </fieldset>
+                <br/>
+                <input type="submit" value="Envoyer" class="bouton"/>
+            </p>
+        </form>
+    </body>
+</html>
